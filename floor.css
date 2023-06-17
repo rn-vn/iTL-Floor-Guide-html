@@ -1,0 +1,85 @@
+/* floor.html */
+@charset 'UTF-8';
+
+@font-face {
+  font-family: 'ZenMaruGothicRegular';
+  src: url('fonts/ZenMaruGothic-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ZenMaruGothicMedium';
+  src: url('fonts/ZenMaruGothic-Medium.ttf');
+}
+
+* {
+  font-family: 'ZenMaruGothicRegular';
+  background-color: white;
+}
+
+.wrapper {
+  border-radius: 30px;
+}
+
+h1 {
+  /* border: 1px solid red; */
+  margin: 10vh;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+
+.floorchange {
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.floorbox {
+  position: relative;
+  margin: 50px;
+  /* 間隔 */
+  width: 200px;
+  height: 100px;
+
+  border: 2px solid black;
+  border-radius: 80px;
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 62px;
+  vertical-align: middle;
+  background-color: #fff;
+  text-decoration: none;
+
+  text-align: center;
+  line-height: 100px;
+}
+
+.none {
+  position: relative;
+  margin: 50px;
+  /* 間隔 */
+  width: 200px;
+  height: 100px;
+  background-color: none;
+}
+
+.floorbox:hover {
+  /* opacity: 0.6; */
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 445px) {
+  .wrapper {
+    position: absolute;
+    overflow: hidden;
+  }
+
+  h1 {
+    width: 300px;
+    position: relative;
+  }
+}
