@@ -1,3 +1,3 @@
 # iTL-Floor-Guide
 
-![image](https://github.com/rn-vn/iTL-Floor-Guide/assets/120785760/8a95c009-bc2f-4bbf-a6ba-a2287ab273da)
+![image](https://github.com/rn-vn/iTL-Floor-Guide/assets/120785760/28f8420a-4956-4210-90e1-44c587186db7)
