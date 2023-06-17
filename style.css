@@ -1,6 +1,3 @@
-/* index.html, floor.html */
-/* floor.html */
-
 @charset 'UTF-8';
 
 @font-face {
@@ -18,17 +15,6 @@
   background-color: white;
 }
 
-.to-floor {
-  text-align: center;
-}
-
-.first-choice {
-  text-decoration: none;
-}
-.wrapper {
-  border-radius: 30px;
-}
-
 h1 {
   /* border: 1px solid red; */
   margin: 10vh;
@@ -37,7 +23,42 @@ h1 {
   color: black;
 }
 
-.floorchange {
+
+
+/* index.html */
+.to-floor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.first-choice {
+  position: relative;
+  margin: 30px;
+  width: 1000px;
+
+  border: 2px solid black;
+  border-radius: 80px;
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 32px;
+  vertical-align: middle;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 70px;
+}
+
+.first-choice:hover {
+  background-color: #f5f5f5;
+}
+
+
+/* floor.html*/
+.floor-change {
   /* border: 1px solid rebeccapurple; */
   display: flex;
   flex-wrap: wrap;
@@ -67,20 +88,30 @@ h1 {
   line-height: 100px;
 }
 
-.none {
+.return-top {
   position: relative;
   margin: 50px;
   /* 間隔 */
   width: 200px;
   height: 100px;
+  border: 2px solid black;
+  border-radius: 80px;
+  color: #ff0000;
+  font-size: 28px;
+  line-height: 100px;
   background-color: none;
+  text-decoration: none;
 }
 
-.floorbox:hover {
+.floorbox:hover,
+.return-top:hover {
   /* opacity: 0.6; */
   background-color: #f5f5f5;
 }
 
+
+
+/* responsible */
 @media screen and (max-width: 445px) {
   .wrapper {
     position: absolute;
@@ -91,4 +122,76 @@ h1 {
     width: 300px;
     position: relative;
   }
+}
+
+
+
+/* movie.html  */
+.youtube {
+  text-align: center;
+  height: 500px;
+}
+
+.return-top-embed {
+  text-align: center;
+}
+
+.return-top-embed-button {
+  position: relative;
+  overflow: auto;
+  /* width: 200px;
+  height: 80px; */
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 80px;
+  color: #ff0000;
+  font-size: 28px;
+  line-height: 80px;
+  background-color: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.return-top-embed-button:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+/* map.html */
+.movie-title {
+  margin: 5vh;
+}
+
+.map {
+  text-align: center;
+}
+
+.address {
+  text-align: center;
+}
+
+.access {
+  /* border: 1px solid #747578; */
+  margin: 0 auto;
+  /* 真ん中にそろえたいとき */
+  padding: 30px;
+}
+
+th {
+  font-size: 24px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding: 20px;
+  color: red;
+  width: 600px;
+}
+
+td {
+  border: 1px solid #747578;
+  width: 100%;
+  display: block;
+  padding: 5px;
+  text-align: left;
 }
